@@ -1,4 +1,5 @@
 #include "splashkit.h"
+#include "inputs.h"
 
 #define STRO 0.33
 
@@ -11,11 +12,6 @@ void output_person(string name, int age) {
     write_line(age);
 }
 
-// reads the string from the user and outputs the result as a int
-int read_int(string prompt) {
-    write(prompt);
-    return convert_to_integer(read_line());
-}
 // calculates the airspeed
 double output_air_speed(int frequency, int amp) {
     double airspeedcalc;
@@ -27,17 +23,6 @@ double calculate_bmi(double height, double weight) {
     //BMI = weight (kg) / (height (m) * height (m))
     double bmi = weight / (height * height);
     return bmi;
-}
-
-// reads the string from user
-string collect_string (string prompt) {
-    write(prompt);
-    return read_line();
-}
-// reads the string and converts to double
-double read_double(string prompt) {
-    write(prompt);
-    return convert_to_double(read_line());
 }
 
 // main program starts, it collects data from user and then outputs result
