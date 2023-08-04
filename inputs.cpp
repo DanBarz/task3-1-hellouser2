@@ -8,7 +8,7 @@ int read_int(string prompt) {
     return convert_to_integer(read_line());
 }
 
-// reads the string from user
+// reads the string from user and returns string
 string collect_string (string prompt) {
     write(prompt);
     return read_line();

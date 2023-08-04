@@ -4,6 +4,7 @@
 #define STRO 0.33
 
 // Task 3.1 HelloUser2 - Successfully tested with a variety of numbers and decimals.
+// Floats would have been better to use in this prog, but the tutor did OK my using doubles for now
 
 // output the person info
 void output_person(string name, int age) {
